@@ -1,0 +1,72 @@
+﻿QUIZ RETI DI CALCOLATORI
+
+
+
+
+Esercizio 1. La segnalazione a canale comune prevede che
+   A) Gli apparati di controllo delle centrali di commutazione si scambino le informazioni di segnalazione in commutazione di pacchetto
+   B) L’informazione di più utenti sia trasmessa con segnali diversi su di uno stesso canale di  
+trasmissione
+   C) Ad ogni canale dedicato alla trasmissione dei dati d’utente sia associato un diverso canale per la segnalazione
+   D) La segnalazione tra le centrali di commutazione avvenga condividendo un solo canale via satellite
+Risposta: A verificata.
+Commento: nella segnalazione a canale comune le informazioni di utente viaggiano su canali separati ma con un unico canale di segnalazione usato per controllare la segnalazione di tutti i canali utenti. Il canale di segnalazione funziona a pacchetto.
+
+
+Esercizio 2. Le caratteristiche di una topologia a maglia completamente connessa sono
+   A) Elevato numero di canali, buona tolleranza ai guasti, instradamento facile
+   B) Elevato numero di canali, buona tolleranza ai guasti, instradamento difficile
+   C) Basso numero di canali, cattiva tolleranza ai guasti, instradamento difficile
+Risposta: A verificata.
+Commento: vedi lucidi “Topologia a maglia”. Nella maglia completamente connessa c’è sempre una strada diretta tra ogni nodo.
+
+
+
+
+Esercizio 3. I servizi di telecomunicazione interattivi conversazionali sono caratterizzati da
+   A) Basse probabilità di errore nel trasferimento delle informazioni
+   B) Trasferimento delle informazioni in tempo reale
+   C) Memorizzazione delle informazioni in rete e consegna al destinatario in tempo differito
+Risposta: B verificata.
+Commento: Nei servizi interattivi conversazionali la comunicazione avviene con il trasferimento di informazioni da estremo a estremo in tempo reale. Vedi lucidi “Servizi interattivi conversazionali”.
+
+
+Esercizio 4. In reti a commutazione di pacchetto i fattori che inducono alla scelta di pacchetti di piccole dimensioni sono
+   A) Minore incidenza della informazione di controllo, maggiore efficienza nel trasferimento di SDU di grandi dimensioni
+   B) Migliore possibilità di parallelizzazione, minore ritardo di trasferimento, minore probabilità di errore sul bit
+   C) Migliore possibilità di parallelizzazione, minore ritardo di pacchettizzazione, minore probabilità di errore sul pacchetto
+Risposta: C verificata.
+Commento: La lunghezza dei pacchetti è determinata da: possibilità di parallelizzazione (pipeline), ritardo di pacchettizzazione, percentuale di informazione di controllo. Pacchetti brevi favoriscono la trasmissione in parallelo su canali diversi di pacchetti di una stessa comunicazione, pacchetti brevi riducono il ritardo di pacchettizzazione (importante per il traffico voce su rete a pacchetto), pacchetti lunghi riducono la percentuale di informazione di controllo.
+
+
+Esercizio 5. Nel modello OSI, il livello trasporto fornisce servizi
+   A) Basandosi sui servizi dal livello applicazione
+   B) Basandosi sui servizi forniti dal livello rete
+   C) Basandosi sui servizi forniti dal livello sessione
+Risposta: B verificata.
+Commento: Si pensi alla pila ISO/OSI. Vedi lucidi sul modello OSI.
+
+
+Esercizio 6. Quale delle seguenti affermazioni è conforme al modello di riferimento ISO/OSI?
+   A) Una (N)-entità e una (N-1)-entità possono avere lo stesso indirizzo.
+   B) Una (N)-entità può essere associata a due diversi (N-1)-indirizzi.
+   C) Due (N)-entità possono essere associate allo stesso (N-1)-indirizzo.
+Risposta: B verificata.
+Commento: Ogni entità è caratterizzato dalla sigla (indirizzo) del proprio strato, per cui A e C risultano sbagliate e per esclusione la risposta corretta è la B. Fonte Internet.
+
+
+Esercizio 7. In un protocollo a finestra di tipo Go-Back-N può risultare conveniente aumentare la dimensione della finestra di trasmissione (misura in numero di dati)
+   A) Quando aumenta la velocità di trasmissione a pari dimensione delle unità dati e pari ritardi di trasferimento delle unità dati tra trasmettitore e ricevitore
+   B) Quando diminuisce la velocità di trasmissione a pari dimensione delle unità dati e pari ritardi di trasferimento delle unità tra trasmettitore e ricevitore
+   C) Quando diminuisce la distanza tra trasmettitore e ricevitore, quindi i ritardi di trasferimento delle unità dati, senza variare la velocità di trasmissione
+   D) Quando aumenta la probabilità di errore sul canale
+Risposta: A verificata.
+Commento: Efficienza di un protocollo a finestra. Supponendo di avere n=k, si ha Wt=k(1+2*(tp/tx)). All’aumentare della velocità di trasmissione, diminuisce il tempo di trasmissione tx, imponendo un aumento della Wt per mantenere l’efficienza uguale a k.
+
+
+Esercizio 8. Un protocollo a finestra di tipo Go-Back-N non richiede un aumento di complessità rispetto ad uno Stop-And-Wait relativamente a
+   A) Quantità di memoria richiesta al trasmettitore
+   B) Quantità minima di numeri di sequenza richiesti per distinguere le unità dati
+   C) Quantità di memoria richiesta al ricevitore
+Risposta: C verificata.
+Commento: Il Go-Back-N non richiede un aumento di complessità rispetto alla finestra di ricezione al ricevitore. Per lo Stop and Wait e per il Go-Back-N .
